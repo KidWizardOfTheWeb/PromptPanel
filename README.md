@@ -10,6 +10,7 @@ You can link other scripts by invoking them as you would in the command line, bu
 
 # Things to note
 If you want to include a script in a profile, but not have it show up in the GUI, write `EXCLUDE_` in the name of the script. It will then not be included in the button list on the GUI.
+An example profile and script is provided in `Profiles\Test Suite`. DO NOT delete the Profiles folder, as the program uses that to detect profiles.
 
 # Current limitations
 Only absolute paths are allowed right now (i.e. windows users will need to use quotes around paths), wildcard support for file paths is TBA.
