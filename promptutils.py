@@ -90,6 +90,9 @@ def exec_script_button(profilePath, scriptName):
         # Then, open subproc and run all lines in shell
         # Note: you can add breakpoint functionality between lines later this way. Neat.
         for currCommand in splitComms:
-            output = subprocess.check_output(currCommand)
-            print(output.decode())
+            try:
+                output = subprocess.check_output(currCommand)
+                print(output.decode())
+            except Exception as e:
+                print(e)
     pass
